@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Portal</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <center>
+        <h1>Search Appointment</h1>
+        <form id="searchForm" action="/search_appointments" method="POST">
+            <label for="search">Search by Name or Mobile:</label>
+            <input type="text" id="search" name="search">
+            <button type="submit">Search</button>
+        </form>
+        <a href="http://127.0.0.1:5000">Home</a>
+    </center>
+</body>
+</html>
